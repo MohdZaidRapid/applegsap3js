@@ -35,6 +35,10 @@ h1 {
   line-height: 1.1;
 }
 
+h6 {
+  color: "balck";
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
