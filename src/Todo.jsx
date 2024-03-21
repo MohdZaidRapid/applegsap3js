@@ -70,7 +70,7 @@ const TodoApp = () => {
             </li>
           ))}
       </ul>
-      {/* updated todo */}
+      {/* updated todo  for a specific id*/}
       {updateId && <button onClick={handleSaveUpdate}>Save</button>}
     </div>
   );
