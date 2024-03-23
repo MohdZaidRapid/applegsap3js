@@ -20,22 +20,22 @@ const TodoApp = () => {
     setText("");
   };
 
-//   const handleUpdateTodo = (todo) => {
-//     setUpdateId(todo.id);
-//     setText(todo.text);
-//   };
+  const handleUpdateTodo = (todo) => {
+    setUpdateId(todo.id);
+    setText(todo.text);
+  };
 
-//   const handleSaveUpdate = () => {
-//     dispatch(
-//       updateTodo({
-//         id: updateId,
-//         text,
-//         completed: false, // You can change this as needed
-//       })
-//     );
-//     setUpdateId(null);
-//     setText("");
-//   };
+  const handleSaveUpdate = () => {
+    dispatch(
+      updateTodo({
+        id: updateId,
+        text,
+        completed: false, // You can change this as needed
+      })
+    );
+    setUpdateId(null);
+    setText("");
+  };
 
   return (
     <div>
@@ -70,6 +70,7 @@ const TodoApp = () => {
             </li>
           ))}
       </ul>
+      {/* updated todo */}
       {updateId && <button onClick={handleSaveUpdate}>Save</button>}
     </div>
   );
